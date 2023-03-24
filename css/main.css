@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Bitter', serif;
+    color: black;
+    background-color: #032520;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* main header rules */
+header {
+    background-color: black;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    
+}
+
+header::after{
+    background: url(../img/hyrule_rule.png) bottom center;
+    content: "";
+    position: absolute;
+    bottom: -44px;
+    left: 0;
+    width: 100%;
+    height: 86px;
+}
+
+#zelda-logo {
+    width: 300px;
+    padding: 40px 0;
+}
+
+/* main rules here*/
+#character_nav {
+    text-align: center;
+  
+}
+
+#character_nav article h2 {
+    color: #F4EFE5;
+    font-size: 32px;
+    
+    
+}
+
+#character_nav article h2::before {
+   background: url(../img/sword_decorator-l.png) bottom no-repeat;
+   display: inline-block;
+   content: "";
+   width: 32px;
+   height: 61px;
+   position: relative;
+   padding-right: 10px;
+}
+
+#character_nav article h2::after {
+    background: url(../img/sword_decorator.png) bottom no-repeat;
+    display: inline-block;
+    content: "";
+    width: 32px;
+    height: 61px;
+    position: relative;
+    padding-left: 10px;
+ }
+
+.characters {
+    list-style-type: none;
+}
+
+.characters li {
+    position: relative;
+    display: inline-block;
+    height: 220px;
+    margin: 10px 8px;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.characters li a {
+    text-decoration: none;
+}
+
+.characters li h5 {
+    position: relative;
+    color: #F4EFE5;
+    padding: 12px 8px;
+    font-size: 15px;
+}
+
+.bumper {
+    width: 100%;
+    height: 6px;
+    background-color: black;
+}
+
+.sprite {
+    width: 150px;
+    height: 169px;
+    background-image: url(../img/sprite.png);
+}
+
+#link {
+    background-position: -0px 0;
+}
+
+#zelda {
+    background-position: -150px 0;
+}
+
+#ganondorf {
+    background-position: -300px 0;
+}
+
+#ganon {
+    background-position: -452px 0;
+}
+
+#impa {
+    background-position: -602px 0;
+}
+
+#deku {
+    background-position: -751px 0;
+}
+
+.sprite:hover {
+    background-position-y: -169px !important;
+}
+
+.box-1{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 200px;
+}
+
+article {
+    padding: 10px;
+    margin-top: 40px;
+}
+
+
+article p {
+ padding: 20px;
+    color: #B99047;
+    font-size: 22px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* footer rules here */
+
+footer {
+    color: white;
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+
+.stick_footer {
+    background-color: black;
+    height: 200px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    
+}
+
+.lightbox {
+    background-color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-color: 55vh;
+    background-position: 40px;
+    display: none;
+}
+
+#lightbox1 {
+    background-image: url(../img/mario-pole.png);
+}
+
+#lightbox2 {
+    background-image: url(../img/peach.png);
+}
+
+#lightbox3 {
+    background-image: url(../img/toad.png);
+}
+
+#lightbox4 {
+    background-image: url(../img/luigi.png);
+}
+
+#lightbox5 {
+    background-image: url(../img/bowser.png);
+}
+
+#lightbox6 {
+    background-image: url(../img/yoshi.png);
+}
+
+.lightbox_close {
+    position: relative;
+    top: 20px;
+    left: 95%;
+    color: white;
+    font-size: 3em;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.lightbox article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 100px;
+}
+
+.lightbox article p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.lb_text .lb_heading {
+    text-align: left;
+}
+
+.lb_text {
+    line-height: 1.6 !important;
+   
+    padding-top: 2em;
+}
+
+.lightbox:target {
+    display: block;
+}
