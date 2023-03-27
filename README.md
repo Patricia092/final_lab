@@ -10,7 +10,7 @@
 </br></br>
 
 <p align ="center">
-<img src = "./img/characters.png" width ="750px" height="350px">
+<img src = "./img/characters.png" width ="750px" height="500px">
 
 </br>
 <p align ="center">
@@ -18,7 +18,7 @@ Once you choose it, you can learn more about the character!
 </br></br>
 
 <p align ="center">
-<img src = "./img/zelda_lightbox.png" width ="750px" height="350px">
+<img src = "./img/zelda_lightbox.png" width ="750px" height="500px">
 </br>
 
 <p align="center">
