@@ -103,8 +103,9 @@ header::after{
 .characters li h5 {
     position: relative;
     color: #F4EFE5;
-    padding: 24px 8px;
-    font-size: 15px;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 25px;
 }
 
 .bumper {
@@ -125,21 +126,36 @@ header::after{
 
 .box {
     width: 150px;
-    height: 60px;
+    height: 100px;
     background-color: black;
 }
 
-.box:hover{
+.characters li h5::before {
+    background: url(../img/sub_nav_text_decorator.svg) center no-repeat;
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 61px;
     position: relative;
-    background-color: #B99047;
-    animation-name: box;
-    animation-duration: 10s;
+    transform: rotate(0.5);
+    margin-right: 10px;
+    opacity: 0;
+}
+
+.box:hover > h5::before{
+    opacity: 1;
+    animation-name: nav;
+    animation-duration: 3s;  
     animation-fill-mode: forwards;
 }
 
-@keyframes box {
-    from {top: 0px;}
-  to {top: 200px; background-color: black;}
+@keyframes nav {
+    from {
+        top: 0px;;
+    }
+    to {
+        top: 24px;
+    }
 }
 
 
